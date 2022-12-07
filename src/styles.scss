@@ -1,7 +1,7 @@
-html {
-  font-family: 'Roboto Slab', serif;
-}
-
-body {
-  margin: 0;
-}
+@use './theme/reset';
+@use './theme/variables';
+@use './theme/typo';
+@use './theme/spacing';
+@use './theme/tel';
+@use './theme/icon';
+@use './theme/review';

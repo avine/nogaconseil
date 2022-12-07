@@ -1,0 +1,20 @@
+<button class="app-nav__burger" (click)="toggleMenu()"></button>
+
+<div *ngIf="menuOpened" class="app-nav__menu">
+  <div>
+    <h3 class="h3">Menu</h3>
+    <ul class="ul display-5">
+      <li><a (click)="navigate('demarche')">Ma démarche d'orthopédagogue</a></li>
+      <li><a (click)="navigate('parcours')">Mon parcours</a></li>
+      <li>
+        Accompagnement
+        <ul class="ul">
+          <li><a (click)="navigate('accompagnement-collectif')">collectif</a></li>
+          <li><a (click)="navigate('accompagnement-individuel')">individuel</a></li>
+        </ul>
+      </li>
+      <li><a (click)="navigate('temoignages')">Témoignages</a></li>
+      <li><a (click)="navigate('contact')">Nous contacter</a></li>
+    </ul>
+  </div>
+</div>

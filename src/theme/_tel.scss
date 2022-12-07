@@ -1,0 +1,35 @@
+.tel {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.75em; /* same as below */
+  line-height: 1.25em;
+  font-size: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.75em; /* same as above */
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    background: #116eee url(/assets/phone-alt-solid.svg) center center no-repeat;
+    background-size: 1.25rem 1.25rem;
+    animation: pulseAnim 2s infinite;
+  }
+}
+
+@keyframes pulseAnim {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(17, 110, 238, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgb(17, 110, 238, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(17, 110, 238, 0);
+  }
+}

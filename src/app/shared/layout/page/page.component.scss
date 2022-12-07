@@ -1,4 +1,40 @@
-.nc-page {
-  display: block;
+.app-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+
+  //box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 1.025);
+  //border-bottom: 1px solid var(--app-border-color);
+
+  &__image {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+  }
+
+  &__content {
+    padding-top: var(--app-space-y);
+    padding-bottom: var(--app-space-y);
+    padding-left: var(--app-space-x);
+    padding-right: var(--app-space-x);
+
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &--centered {
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
 }

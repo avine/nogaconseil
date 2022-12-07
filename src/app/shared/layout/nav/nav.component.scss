@@ -1,0 +1,37 @@
+.app-nav {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+
+  &__burger {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.75) url('/assets/ellipsis-vertical-solid.svg') no-repeat center;
+    background-size: 1.5rem 1.5rem;
+  }
+
+  &__menu {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.97);
+    overflow: auto;
+
+    padding: 24px;
+
+    display: flex;
+    > * {
+      margin: auto;
+    }
+  }
+}
