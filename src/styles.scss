@@ -1,7 +1,11 @@
-@use './theme/reset';
 @use './theme/variables';
+@use './theme/reset';
+
+// Base
+@use './theme/color';
 @use './theme/typo';
-@use './theme/spacing';
-@use './theme/tel';
+
+// Components
 @use './theme/icon';
-@use './theme/review';
+@use './theme/page';
+@use './theme/tel';

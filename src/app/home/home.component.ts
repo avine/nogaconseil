@@ -1,7 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { CardComponent } from '../shared/layout/card/card.component';
-import { NavComponent } from '../shared/layout/nav/nav.component';
-import { PageComponent } from '../shared/layout/page/page.component';
+import { NavComponent } from '../shared/nav/nav.component';
+import { AboutComponent } from './about.component';
+import { ApproachComponent } from './approach.component';
+import { CollectiveCoachingComponent } from './collective-coaching.component';
+import { ContactComponent } from './contact.component';
+import { IndividualCoachingComponent } from './individual-coaching.component';
+import { LandingComponent } from './landing.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +14,15 @@ import { PageComponent } from '../shared/layout/page/page.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   encapsulation: ViewEncapsulation.None,
-  imports: [PageComponent, CardComponent, NavComponent],
+  imports: [
+    NavComponent,
+    AboutComponent,
+    ApproachComponent,
+    CollectiveCoachingComponent,
+    IndividualCoachingComponent,
+    ReviewsComponent,
+    ContactComponent,
+    LandingComponent,
+  ],
 })
 export class HomeComponent {}

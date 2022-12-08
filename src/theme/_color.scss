@@ -1,0 +1,39 @@
+// Forground color
+.fg-border {
+  color: var(--border);
+}
+.fg-scene {
+  color: var(--scene);
+}
+.fg-scene-muted {
+  color: var(--scene-muted);
+}
+.fg-text {
+  color: var(--text);
+}
+.fg-primary {
+  color: var(--primary);
+}
+.fg-secondary {
+  color: var(--secondary);
+}
+
+// Background color
+.bg-border {
+  background-color: var(--border);
+}
+.bg-scene {
+  background-color: var(--scene);
+}
+.bg-scene-muted {
+  background-color: var(--scene-muted);
+}
+.bg-text {
+  background-color: var(--text);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}

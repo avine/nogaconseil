@@ -1,0 +1,25 @@
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-bottom: 1px solid var(--border);
+
+  &--centered {
+    justify-content: center;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: var(--space-y);
+    padding-bottom: var(--space-y);
+    padding-left: var(--space-x);
+    padding-right: var(--space-x);
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: center;
+  }
+}

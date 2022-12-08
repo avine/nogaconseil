@@ -1,7 +1,11 @@
 :root {
-  --app-bg-color: #ffffff;
-  --app-border-color: #dddddd;
+  --border: #ddd;
+  --scene: #fff;
+  --scene-muted: #eee;
+  --text: #555;
+  --primary: #111;
+  --secondary: #999;
 
-  --app-space-x: clamp(1.5rem, 5vw, 70px);
-  --app-space-y: clamp(1.5rem, 5vh, 70px);
+  --space-x: clamp(1.5rem, 5vw, 70px);
+  --space-y: clamp(1.5rem, 5vh, 70px);
 }

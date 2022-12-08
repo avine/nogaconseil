@@ -3,6 +3,8 @@
 }
 
 html {
+  background-color: var(--scene);
+  color: var(--text);
   font-family: 'Roboto Slab', serif;
   font-size: clamp(16px, 2vw, 28px);
   font-weight: 400;
