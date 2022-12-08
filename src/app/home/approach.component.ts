@@ -9,7 +9,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
     <h3 class="h2 fg-primary">Ma démarche d'orthopédagogue</h3>
 
-    <p class="thin">
+    <p class="paragraph">
       J'accompagne de jeunes décrocheurs pour leur redonner le plaisir d'apprendre. Bien qu'ils soient capables de
       s'organiser (pour prévoir un anniversaire-surprise), de raisonner (pour convaincre un parent de passer la soirée
       chez un copain), de mémoriser (les résultats des rencontres de foot), dès qu'il s'agit d'école ils sont
@@ -17,14 +17,14 @@ import { Component, ViewEncapsulation } from '@angular/core';
       raisonnement métacognitif pour rendre explicites les stratégies qu'ils utilisent.
     </p>
 
-    <p class="thin">
+    <p class="paragraph">
       J'interviens auprès des individus pour qu'ils développent leur potentiel d'apprentissage&nbsp;: il ne s'agit pas
       de viser un modèle mais de les amener à exploiter au mieux leur potentiel en s'appuyant sur leurs points forts.
     </p>
 
-    <p class="thin">J'aide les salariés à redonner du sens et de la légèreté à leur travail.</p>
+    <p class="paragraph">J'aide les salariés à redonner du sens et de la légèreté à leur travail.</p>
 
-    <p class="thin">
+    <p class="paragraph">
       Et, plus que tout, je suis convaincue qu'une posture bienveillante permet d'étayer les apprentissages.
     </p>
   `,
