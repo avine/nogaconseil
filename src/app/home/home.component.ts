@@ -7,6 +7,7 @@ import { ContactComponent } from './contact.component';
 import { IndividualCoachingComponent } from './individual-coaching.component';
 import { LandingComponent } from './landing.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { ToolsComponent } from './tools.component';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
     ReviewsComponent,
     ContactComponent,
     LandingComponent,
+    ToolsComponent,
   ],
 })
 export class HomeComponent {}

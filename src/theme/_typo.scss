@@ -32,6 +32,10 @@
   font-weight: 200;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 .paragraph,
 .list {
   margin-bottom: 1rem;
@@ -53,13 +57,14 @@
   &,
   &:visited {
     cursor: pointer;
-    border-bottom: 1px solid currentColor;
-    transition: border-bottom ease 200ms;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    transition: color ease 200ms;
   }
 
   &:hover,
   &:active,
   &:focus {
-    border-bottom-width: 3px;
+    color: var(--primary);
   }
 }

@@ -13,14 +13,14 @@
     width: 1.25em;
     height: 1.25em;
     border-radius: 50%;
-    background: #116eee url(~src/assets/phone-alt-solid.svg) center center no-repeat;
+    background: var(--primary) url(~src/assets/phone-alt-solid.svg) center center no-repeat;
     background-size: 1.25rem 1.25rem;
     // animation: pulseAnim 2s infinite;
   }
 
   &--email::before {
     background-size: 1.5rem 1.5rem !important;
-    background: #116eee url(~src/assets/at-solid.svg) center center no-repeat;
+    background: var(--primary) url(~src/assets/at-solid.svg) center center no-repeat;
   }
 }
 

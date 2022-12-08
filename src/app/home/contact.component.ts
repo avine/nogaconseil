@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   standalone: true,
   encapsulation: ViewEncapsulation.None,
   template: `
-    <h3 class="h3">Me contacter</h3>
+    <h3 class="h2">Me contacter</h3>
 
     <p class="h5 thin">
       <a href="tel:+33665209003" rel="noopener noreferrer" class="tel">06 65 20 90 03</a>

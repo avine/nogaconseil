@@ -9,8 +9,8 @@ import { CardComponent } from '../shared/card/card.component';
   template: `
     <app-card class="page__content" imagePath="assets/people.jpg">
       <h3 class="h2">
-        Accompagnement<br />
-        <span class="fg-secondary">collectif</span><br />
+        <div class="fg-secondary">Accompagnement</div>
+        collectif
       </h3>
 
       <ul class="list">

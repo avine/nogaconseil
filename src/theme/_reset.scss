@@ -1,11 +1,14 @@
+@use './variables' as var;
+
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   background-color: var(--scene);
   color: var(--text);
-  font-family: 'Roboto Slab', serif;
+  font-family: var.$font-family;
   font-size: clamp(16px, 2vw, 28px);
   font-weight: 400;
   line-height: 1.5;

@@ -10,11 +10,10 @@
     display: inline-block;
     width: 2.5rem;
     height: 2.5rem;
-    // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    border: 1px solid var(--primary);
-    background: rgba(255, 255, 255, 0.75) url(~src/assets/ellipsis-vertical-solid.svg) no-repeat center;
+    background: var(--text) url(~src/assets/ellipsis-vertical-solid.svg) no-repeat center;
     background-size: 1.5rem 1.5rem;
+    color: var(--scene);
 
     outline: 0;
     transition: transform ease 250ms;
@@ -31,7 +30,8 @@
     bottom: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.97);
+    background-color: var(--text);
+    color: var(--scene);
     overflow: auto;
   }
 

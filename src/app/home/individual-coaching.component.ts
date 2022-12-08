@@ -8,9 +8,9 @@ import { CardComponent } from '../shared/card/card.component';
   encapsulation: ViewEncapsulation.None,
   template: `
     <app-card class="page__content" imagePath="assets/studying.jpg">
-      <h3 class="h3">
-        Accompagnement<br />
-        <span class="fg-secondary">individuel</span>
+      <h3 class="h2">
+        <div class="fg-secondary">Accompagnement</div>
+        individuel
       </h3>
 
       <ul class="list">
