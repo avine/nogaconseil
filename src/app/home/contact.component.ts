@@ -12,11 +12,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
       Janie Harros
     </h3>
 
-    <p class="h4 thin">
+    <p class="h3 thin">
       <a href="tel:+33665209003" rel="noopener noreferrer" class="big-icon big-icon--tel">06 65 20 90 03</a>
     </p>
 
-    <p class="h4 thin">
+    <p class="h3 thin">
       <a href="mailto:jharros@gmail.com" rel="noopener noreferrer" target="_blank" class="big-icon big-icon--email">
         jharros@gmail.com
       </a>
