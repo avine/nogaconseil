@@ -9,6 +9,17 @@
     justify-content: center;
   }
 
+  &--halo {
+    background-color: var(--scene-muted);
+    background-image: radial-gradient(
+      circle at 33%,
+      white 32%,
+      rgba(172, 225, 217, 0.1) 32%,
+      rgba(172, 225, 217, 0) 33%,
+      transparent 33%
+    );
+  }
+
   &__content {
     width: 100%;
     max-width: 1400px;

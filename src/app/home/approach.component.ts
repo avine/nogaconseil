@@ -7,7 +7,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   template: `
     <img src="assets/reshot-icon-career-choice.svg" class="icon" alt="" />
 
-    <h3 class="h2 fg-primary">Ma démarche d'orthopédagogue</h3>
+    <h3 class="h2 fg-secondary">Ma démarche d'orthopédagogue</h3>
 
     <p class="paragraph">
       J'accompagne de jeunes décrocheurs pour leur redonner le plaisir d'apprendre. Bien qu'ils soient capables de

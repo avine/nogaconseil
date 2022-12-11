@@ -9,7 +9,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
     <h3 class="h2 fg-secondary">Mon parcours</h3>
 
-    <p class="paragraph">Tout s’est joué il y a 20 ans.</p>
+    <p class="paragraph">Tout s'est joué il y a 20 ans.</p>
 
     <p class="paragraph">
       Je pilote alors un projet de lutte contre l'illetrisme fondé sur la méthode de remédiation cognitive du Professeur
