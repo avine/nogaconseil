@@ -13,7 +13,6 @@ import { ToolsComponent } from './tools.component';
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
   encapsulation: ViewEncapsulation.None,
   imports: [
     NavComponent,

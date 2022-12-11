@@ -21,7 +21,7 @@ export class NavComponent {
     this.isMenuOpened = !this.isMenuOpened;
   }
 
-  navigate(id: string) {
+  scrollTo(id: string) {
     this.document.querySelector(`#${id}`)?.scrollIntoView({ behavior: 'smooth' });
     this.isMenuOpened = false;
   }
