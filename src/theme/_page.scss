@@ -9,15 +9,30 @@
     justify-content: center;
   }
 
-  &--halo {
-    background-color: var(--scene-muted);
-    background-image: radial-gradient(
-      circle at 33%,
-      white 32%,
-      rgba(172, 225, 217, 0.1) 32%,
-      rgba(172, 225, 217, 0) 33%,
-      transparent 33%
-    );
+  @media (orientation: landscape) {
+    &--halo {
+      background-color: var(--scene-muted);
+      background-image: radial-gradient(
+        circle at 33%,
+        white 25vw,
+        rgba(172, 225, 217, 0.1) 25vw,
+        rgba(172, 225, 217, 0) 26vw,
+        transparent 26vw
+      );
+    }
+  }
+
+  @media (orientation: portrait) {
+    &--halo {
+      background-color: var(--scene-muted);
+      background-image: radial-gradient(
+        circle at 33%,
+        white 25vh,
+        rgba(172, 225, 217, 0.1) 25vh,
+        rgba(172, 225, 217, 0) 26vh,
+        transparent 26vh
+      );
+    }
   }
 
   &__content {
