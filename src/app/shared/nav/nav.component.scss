@@ -14,10 +14,10 @@ $anim-duration: 0.5s;
     background-size: 1.5rem 1.5rem;
     color: var(--scene);
     transform: rotate(90deg);
-    transition: transform ease 250ms;
+    transition: transform ease $anim-duration;
 
     &--opened {
-      transform: rotate(0deg);
+      transform: rotate(-180deg);
     }
   }
 
@@ -60,7 +60,7 @@ $anim-duration: 0.5s;
       margin: auto;
       padding: 24px;
 
-      animation: menuContentAnim ease-out $anim-duration normal;
+      animation: menuContentAnim ease-in-out $anim-duration normal;
     }
   }
 }
@@ -68,10 +68,16 @@ $anim-duration: 0.5s;
 @media (orientation: landscape) {
   @keyframes menuBgAnim {
     0% {
-      top: -100px;
-      right: -100px;
-      width: 200px;
-      height: 200px;
+      top: 1rem;
+      right: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    5% {
+      top: -1rem;
+      right: -1rem;
+      width: 6.5rem;
+      height: 6.5rem;
     }
     100% {
       top: -150vw;
@@ -85,10 +91,16 @@ $anim-duration: 0.5s;
 @media (orientation: portrait) {
   @keyframes menuBgAnim {
     0% {
-      top: -100px;
-      right: -100px;
-      width: 200px;
-      height: 200px;
+      top: 1rem;
+      right: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    5% {
+      top: -1rem;
+      right: -1rem;
+      width: 6.5rem;
+      height: 6.5rem;
     }
     100% {
       top: -150vh;
