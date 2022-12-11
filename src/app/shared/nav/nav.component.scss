@@ -65,18 +65,37 @@ $anim-duration: 0.5s;
   }
 }
 
-@keyframes menuBgAnim {
-  0% {
-    top: -100px;
-    right: -100px;
-    width: 200px;
-    height: 200px;
+@media (orientation: landscape) {
+  @keyframes menuBgAnim {
+    0% {
+      top: -100px;
+      right: -100px;
+      width: 200px;
+      height: 200px;
+    }
+    100% {
+      top: -150vw;
+      right: -150vw;
+      width: 300vw;
+      height: 300vw;
+    }
   }
-  100% {
-    top: -150%;
-    right: -150%;
-    width: 300%;
-    height: 300%;
+}
+
+@media (orientation: portrait) {
+  @keyframes menuBgAnim {
+    0% {
+      top: -100px;
+      right: -100px;
+      width: 200px;
+      height: 200px;
+    }
+    100% {
+      top: -150vh;
+      right: -150vh;
+      width: 300vh;
+      height: 300vh;
+    }
   }
 }
 
