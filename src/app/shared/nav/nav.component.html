@@ -2,6 +2,10 @@
   <span class="app-nav-burger"></span>
 </button>
 
+<button class="app-nav__contact button" routerLink="/" fragment="contact">
+  <img src="assets/comments-solid.svg" style="position: relative; top: 0.5rem; height: 1.5rem" alt="" />
+</button>
+
 <div *ngIf="isMenuOpened" class="app-nav__bg"></div>
 
 <div *ngIf="isMenuOpened" class="app-nav__menu app-nav-menu">
@@ -10,34 +14,11 @@
 
     <ul class="list h4 thin default-line-height">
       <li><a class="link" routerLink="/" fragment="accueil">Accueil</a></li>
-
-      <li><a class="link" routerLink="/" fragment="demarche">Ma démarche d'orthopédagogue</a></li>
-
+      <li><a class="link" routerLink="/" fragment="demarche">Ma démarche</a></li>
       <li><a class="link" routerLink="/" fragment="parcours">Mon parcours</a></li>
-
-      <li>
-        <a class="link" routerLink="/" fragment="outils">Les outils</a>
-
-        <ul class="list h6 thin default-line-height">
-          <li><a class="link" routerLink="/pei">Programme d'Enrichissement Instrumental</a></li>
-          <li><a class="link" routerLink="/facilitation-visuelle">Facilitation visuelle</a></li>
-          <li><a class="link" routerLink="/s-entrainer-a-etre-attentif">S'entraîner à être attentif</a></li>
-          <li><a class="link" routerLink="/neurosciences">Mieux apprendre grace aux neurosciences</a></li>
-          <li><a class="link" routerLink="/cnv">Comminication bienveillante</a></li>
-        </ul>
-      </li>
-
-      <li>
-        Accompagnement
-
-        <ul class="list h6 thin default-line-height">
-          <li><a class="link" routerLink="/" fragment="accompagnement-collectif">Accompagnement collectif</a></li>
-          <li><a class="link" routerLink="/" fragment="accompagnement-individuel">Accompagnement individuel</a></li>
-        </ul>
-      </li>
-
+      <li><a class="link" routerLink="/" fragment="outils">Les outils</a></li>
+      <li><a class="link" routerLink="/" fragment="accompagnement">Accompagnement</a></li>
       <li><a class="link" routerLink="/" fragment="temoignages">Témoignages</a></li>
-
       <li><a class="link" routerLink="/" fragment="contact">Me contacter</a></li>
     </ul>
   </div>

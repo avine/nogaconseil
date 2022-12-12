@@ -21,11 +21,12 @@ import { Component } from '@angular/core';
           <li>La liberté de choisir ses actes sans dépendre de ses habitudes</li>
           <li>Une capacité à se concentrer rapidement même si le sujet ne nous intéresse pas</li>
           <li>Une attention décuplée sur les tâches à réaliser, sur ses émotions et celles des autres</li>
-          <li>
-            Développer son attention, ça s'apprend! C'est un entraînement qui touche à une compétence
-            transversale&nbsp;: la capacité qu'a chaque être humain de contrôler sa vie mentale, voire sa vie
-          </li>
         </ul>
+
+        <p class="h6 thin">
+          Développer son attention, ça s'apprend! C'est un entraînement qui touche à une compétence transversale&nbsp;:
+          la capacité qu'a chaque être humain de contrôler sa vie mentale, voire sa vie
+        </p>
 
         <p class="h6 thin">
           Tous, nous sommes soumis à des sollicitations continuelles: mails, appels téléphoniques, organisation de la
