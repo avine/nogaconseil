@@ -11,7 +11,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     </h1>
 
     <h2 class="h1">
-      <div class="fg-secondary">Apprenez plus facilement</div>
+      <div class="fg-secondary" style="margin-bottom: 0.75rem">Apprenez plus facilement</div>
       Mémorisez plus longtemps
     </h2>
   `,
