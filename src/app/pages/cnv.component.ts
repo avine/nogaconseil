@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <div class="page__content">
         <h1 class="h1">Communication bienveillante</h1>
 
-        <h2 class="h2 fg-primary">Objectif général</h2>
+        <h2 class="h3 thin fg-primary">Objectif général</h2>
 
         <p class="paragraph">
           Des ateliers pour mettre en place une communication respectueuse et bienveillante avec les enfants, les
@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
           les mécanismes de la compréhension et le fonctionnement des mémoires.
         </p>
 
-        <h2 class="h2 fg-primary">Bénéfices attendus</h2>
+        <h2 class="h3 thin fg-primary">Bénéfices attendus</h2>
 
         <ul class="list">
           <li>Améliorer l'efficacité de sa communication</li>

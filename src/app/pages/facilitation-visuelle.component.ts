@@ -9,13 +9,13 @@ import { Component } from '@angular/core';
       <div class="page__content">
         <h1 class="h1">Facilitation visuelle</h1>
 
-        <h2 class="h2 fg-primary">Objectif général</h2>
+        <h2 class="h3 thin fg-primary">Objectif général</h2>
 
         <p class="paragraph">
           Découvrir une autre manière de prendre des notes, en structurant ses idées sur papier ou support numérique.
         </p>
 
-        <h2 class="h2 fg-primary">Bénéfices attendus</h2>
+        <h2 class="h3 thin fg-primary">Bénéfices attendus</h2>
 
         <p class="paragraph">
           Les techniques de prise de notes visuelles permettent de dégager l'essentiel et de représenter rapidement des

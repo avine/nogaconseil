@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <div class="page__content">
         <h1 class="h1">Programme d'Enrichissement Instrumental</h1>
 
-        <h2 class="h2 fg-primary">Objectif général</h2>
+        <h2 class="h3 thin fg-primary">Objectif général</h2>
 
         <p class="paragraph">
           Le PEI (Programme d'Enrichissement Instrumental) du Professeur Feuerstein encourage les individus à apprendre
@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
           pensées.
         </p>
 
-        <h2 class="h2 fg-primary">Bénéfices attendus</h2>
+        <h2 class="h3 thin fg-primary">Bénéfices attendus</h2>
 
         <ul class="list">
           <li>Comprendre la métacognition</li>

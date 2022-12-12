@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
       <div class="page__content">
         <h1 class="h1">S'entraîner à être attentif</h1>
 
-        <h2 class="h2 fg-primary">Objectif général</h2>
+        <h2 class="h3 thin fg-primary">Objectif général</h2>
         <p class="paragraph">
           Découvrir l'attention et son rôle pour nous connecter à un objet, à une tâche à réaliser ou à une personne.
           Identifier les éléments distracteurs (internes ou externes) qui empêchent d'être attentif.
         </p>
 
-        <h2 class="h2 fg-primary">Bénéfices attendus</h2>
+        <h2 class="h3 thin fg-primary">Bénéfices attendus</h2>
 
         <ul class="list">
           <li>Comprendre le rôle des neurones dans l'attention</li>
