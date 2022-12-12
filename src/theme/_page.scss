@@ -9,28 +9,26 @@
     justify-content: center;
   }
 
-  @media (orientation: landscape) {
-    &--halo {
-      background-color: var(--scene-muted);
-      background-image: radial-gradient(
-        circle at 33%,
-        white 25vw,
-        rgba(172, 225, 217, 0.1) 25vw,
-        rgba(172, 225, 217, 0) 26vw,
-        transparent 26vw
-      );
-    }
+  &--halo {
+    background-color: var(--scene-muted);
+    background-image: radial-gradient(
+      circle at max(23vw, 23vh),
+      white max(22vw, 22vh),
+      rgba(172, 225, 217, 0.1) max(22vw, 22vh),
+      rgba(172, 225, 217, 0) max(24vw, 24vh),
+      transparent max(24vw, 24vh)
+    );
   }
 
-  @media (orientation: portrait) {
+  @media (min-width: 1400px) {
     &--halo {
       background-color: var(--scene-muted);
       background-image: radial-gradient(
-        circle at 33%,
-        white 25vh,
-        rgba(172, 225, 217, 0.1) 25vh,
-        rgba(172, 225, 217, 0) 26vh,
-        transparent 26vh
+        circle at calc(50% - 375px),
+        white 310px,
+        rgba(172, 225, 217, 0.1) 310px,
+        rgba(172, 225, 217, 0) 320px,
+        transparent 320px
       );
     }
   }

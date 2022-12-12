@@ -28,6 +28,10 @@
   font-weight: 800;
 }
 
+.default-line-height {
+  line-height: 1.5;
+}
+
 .thin {
   font-weight: 200;
 }
@@ -60,7 +64,8 @@
   &:visited {
     cursor: pointer;
     text-decoration: underline;
-    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
     transition: color ease 200ms;
   }
 
