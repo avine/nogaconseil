@@ -22,7 +22,7 @@ $anim-duration: 0.5s;
 
   &__contact {
     position: fixed;
-    right: 1.5rem;
+    right: 1rem;
     bottom: 1rem;
     z-index: 10;
     width: 3rem;
@@ -30,6 +30,14 @@ $anim-duration: 0.5s;
     line-height: 3rem;
 
     border-radius: 99px;
+
+    right: -3rem;
+    opacity: 0;
+    transition: opacity ease 350ms, right ease 350ms;
+    &--visible {
+      opacity: 1;
+      right: 1rem;
+    }
   }
 
   &__bg {

@@ -2,7 +2,13 @@
   <span class="app-nav-burger"></span>
 </button>
 
-<button class="app-nav__contact button" routerLink="/" fragment="contact">
+<button
+  *ngIf="{ scrollY: scrollY$ | async } as data"
+  class="app-nav__contact button"
+  [class.app-nav__contact--visible]="data.scrollY ? data.scrollY > 200 : false"
+  routerLink="/"
+  fragment="contact"
+>
   <img src="assets/comments-solid.svg" style="position: relative; top: 0.5rem; height: 1.5rem" alt="" />
 </button>
 
