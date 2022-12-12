@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <section class="page page--centered" id="accueil">
       <div class="page__content">
-        <h1 class="h1">Mieux apprendre avec les neurosciences</h1>
+        <h1 class="h1">Mieux apprendre grace aux neurosciences</h1>
 
         <h2 class="h3 thin fg-primary">Objectif général</h2>
 

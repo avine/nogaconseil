@@ -1,5 +1,4 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { NavComponent } from '../shared/nav/nav.component';
 import { AboutComponent } from './about.component';
 import { ApproachComponent } from './approach.component';
 import { CollectiveCoachingComponent } from './collective-coaching.component';
@@ -15,7 +14,6 @@ import { ToolsComponent } from './tools.component';
   templateUrl: './home.component.html',
   encapsulation: ViewEncapsulation.None,
   imports: [
-    NavComponent,
     AboutComponent,
     ApproachComponent,
     CollectiveCoachingComponent,

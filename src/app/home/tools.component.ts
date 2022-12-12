@@ -15,7 +15,7 @@ import { RouterLink } from '@angular/router';
       <li><a class="link" routerLink="/pei">PEI (Programme d'Enrichissement Instrumental)</a></li>
       <li><a class="link" routerLink="/facilitation-visuelle">Facilitation visuelle</a></li>
       <li><a class="link" routerLink="/s-entrainer-a-etre-attentif">S'entraîner à être attentif</a></li>
-      <li><a class="link" routerLink="/neurosciences">Mieux apprendre avec les neurosciences</a></li>
+      <li><a class="link" routerLink="/neurosciences">Mieux apprendre grace aux neurosciences</a></li>
       <li><a class="link" routerLink="/cnv">Comminication bienveillante</a></li>
     </ul>
   `,

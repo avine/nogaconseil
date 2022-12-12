@@ -9,27 +9,36 @@
     <h3 class="h1">Menu</h3>
 
     <ul class="list h4 thin">
-      <li><a class="link" (click)="scrollTo('accueil')">Accueil</a></li>
+      <li><a class="link" routerLink="/" fragment="accueil">Accueil</a></li>
 
-      <li><a class="link" (click)="scrollTo('demarche')">Ma démarche d'orthopédagogue</a></li>
+      <li><a class="link" routerLink="/" fragment="demarche">Ma démarche d'orthopédagogue</a></li>
 
-      <li><a class="link" (click)="scrollTo('parcours')">Mon parcours</a></li>
+      <li><a class="link" routerLink="/" fragment="parcours">Mon parcours</a></li>
 
-      <li><a class="link" (click)="scrollTo('outils')">Les outils</a></li>
+      <li>
+        <a class="link" routerLink="/" fragment="outils">Les outils</a>
+
+        <ul class="list h5 thin">
+          <li><a class="link" routerLink="/pei">Programme d'Enrichissement Instrumental</a></li>
+          <li><a class="link" routerLink="/facilitation-visuelle">Facilitation visuelle</a></li>
+          <li><a class="link" routerLink="/s-entrainer-a-etre-attentif">S'entraîner à être attentif</a></li>
+          <li><a class="link" routerLink="/neurosciences">Mieux apprendre grace aux neurosciences</a></li>
+          <li><a class="link" routerLink="/cnv">Comminication bienveillante</a></li>
+        </ul>
+      </li>
 
       <li>
         Accompagnement&nbsp;:
 
-        <ul class="list">
-          <li><a class="link" (click)="scrollTo('accompagnement-collectif')">collectif</a></li>
-
-          <li><a class="link" (click)="scrollTo('accompagnement-individuel')">individuel</a></li>
+        <ul class="list h5 thin">
+          <li><a class="link" routerLink="/" fragment="accompagnement-collectif">collectif</a></li>
+          <li><a class="link" routerLink="/" fragment="accompagnement-individuel">individuel</a></li>
         </ul>
       </li>
 
-      <li><a class="link" (click)="scrollTo('temoignages')">Témoignages</a></li>
+      <li><a class="link" routerLink="/" fragment="temoignages">Témoignages</a></li>
 
-      <li><a class="link" (click)="scrollTo('contact')">Me contacter</a></li>
+      <li><a class="link" routerLink="/" fragment="contact">Me contacter</a></li>
     </ul>
   </div>
 </div>
