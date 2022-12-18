@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   standalone: true,
   encapsulation: ViewEncapsulation.None,
   template: `
-    <img src="assets/reshot-icon-adventure.svg" class="icon" alt="" />
+    <img src="assets/reshot/reshot-icon-adventure.svg" class="icon" alt="" />
 
     <h3 class="h2 fg-secondary">Mon parcours</h3>
 

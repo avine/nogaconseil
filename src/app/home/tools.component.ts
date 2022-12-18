@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <img src="assets/reshot-icon-geometry.svg" class="icon" alt="" />
+    <img src="assets/reshot/reshot-icon-geometry.svg" class="icon" alt="" />
 
     <h3 class="h2 fg-primary">Les outils</h3>
 

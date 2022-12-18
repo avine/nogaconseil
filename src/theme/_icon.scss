@@ -23,12 +23,12 @@ $height: 2rem;
   }
 
   &--tel::before {
-    background: var(--primary) url(~src/assets/phone-alt-solid.svg) center center no-repeat;
+    background: var(--primary) url(~src/assets/fa/phone-alt-solid.svg) center center no-repeat;
     background-size: 1rem;
   }
 
   &--email::before {
     background-size: 1.2rem !important;
-    background: var(--primary) url(~src/assets/at-solid.svg) center center no-repeat;
+    background: var(--primary) url(~src/assets/fa/at-solid.svg) center center no-repeat;
   }
 }

@@ -6,7 +6,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
   template: `
     <h1 class="h5 thin">
-      <img src="assets/reshot-icon-biology.svg" class="icon" alt="" style="margin-right: 0.5rem;" />
+      <img src="assets/reshot/reshot-icon-biology.svg" class="icon" alt="" style="margin-right: 0.5rem;" />
       Noga Conseil
     </h1>
 

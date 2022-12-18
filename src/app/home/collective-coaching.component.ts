@@ -7,7 +7,7 @@ import { CardComponent } from '../shared/card/card.component';
   imports: [CardComponent],
   encapsulation: ViewEncapsulation.None,
   template: `
-    <app-card class="page__content" imagePath="assets/people.jpg">
+    <app-card class="page__content" imagePath="assets/images/people.jpg">
       <h3 class="h2">
         <div class="fg-secondary">Accompagnement</div>
         collectif
