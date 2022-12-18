@@ -20,7 +20,7 @@ import { CardComponent } from '../shared/card/card.component';
       </ul>
 
       <p class="h6 thin">
-        Un accompagnement pour (re)trouver confiance en soi et progresser en présence ou à distance.
+        Un accompagnement pour (re)trouver la confiance en soi et progresser en présence ou à distance.
       </p>
     </app-card>
   `,

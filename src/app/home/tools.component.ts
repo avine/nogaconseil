@@ -15,9 +15,8 @@ import { RouterLink } from '@angular/router';
       <li>
         <h3 class="h5" style="margin-bottom: 0.25rem">PEI (Programme d'Enrichissement Instrumental)</h3>
         <p class="paragraph thin">
-          Le PEI (Programme d'Enrichissement Instrumental) du Professeur Feuerstein encourage les individus à apprendre
-          comment penser (et non quoi penser). Le PEI travaille la métacognition, le fait de penser sur ses propres
-          pensées.
+          Le PEI du Professeur Feuerstein encourage les individus à apprendre comment penser (et non quoi penser). Le
+          PEI travaille la métacognition, le fait de penser sur ses propres pensées.
         </p>
       </li>
 
@@ -37,17 +36,15 @@ import { RouterLink } from '@angular/router';
       </li>
 
       <li>
-        <h3 class="h5" style="margin-bottom: 0.25rem">Mieux apprendre grace aux neurosciences</h3>
+        <h3 class="h5" style="margin-bottom: 0.25rem">Mieux apprendre grâce aux neurosciences</h3>
         <p class="paragraph thin">
-          Le cerveau est à la une dans de nombreux médias. Les résultats scientifiques ne sont plus confinés dans les
-          laboratoires mais deviennent visibles d’un large public et l’on s’émerveille de « voir le cerveau penser ». Ce
-          ne sont pas des recettes mais bien des pistes concrètes que proposent les neurosciences pour s'approprier les
-          mécanismes de la compréhension et le fonctionnement des mémoires.
+          Découvrir et s'approprier les mécanismes de la compréhension et le fonctionnement des mémoires. Analyser les
+          méthodes d'apprentissage adaptées à chacun.
         </p>
       </li>
 
       <li>
-        <h3 class="h5" style="margin-bottom: 0.25rem">Comminication bienveillante</h3>
+        <h3 class="h5" style="margin-bottom: 0.25rem">Communication bienveillante</h3>
         <p class="paragraph thin">
           Des ateliers pour mettre en place une communication respectueuse et bienveillante avec les enfants , les
           adolescents et les adultes.
