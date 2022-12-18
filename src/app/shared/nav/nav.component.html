@@ -5,7 +5,7 @@
 <button
   *ngIf="{ scrollY: scrollY$ | async } as data"
   class="app-nav__contact button"
-  [class.app-nav__contact--visible]="data.scrollY ? data.scrollY > 200 : false"
+  [class.app-nav__contact--visible]="data.scrollY ? data.scrollY.inBetween : false"
   routerLink="/"
   fragment="contact"
 >

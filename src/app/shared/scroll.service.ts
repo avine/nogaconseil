@@ -11,8 +11,18 @@ export class ScrollService {
 
   scrollY$ = this.document.defaultView
     ? fromEvent(this.document.defaultView, 'scroll').pipe(
-        debounceTime(250),
-        map(() => this.document.defaultView?.scrollY ?? 0)
+        debounceTime(200),
+        map(() => {
+          const { scrollTop, scrollHeight } = this.document.documentElement;
+          const windowHeight = this.document.defaultView?.innerHeight ?? 0;
+          const nearTop = scrollTop < windowHeight * 0.8;
+          const nearBottom = scrollHeight - (scrollTop + windowHeight) < windowHeight * 0.8;
+          return {
+            nearTop,
+            inBetween: !nearTop && !nearBottom,
+            nearBottom,
+          };
+        })
       )
     : EMPTY;
 }
