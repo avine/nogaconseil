@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "docs": "ng build --base-href /nogaconseil/ --output-path docs && cp ./docs/index.html ./docs/404.html"
+    "docs": "ng build --base-href /nogaconseil/ --output-path docs && cp ./docs/index.html ./docs/404.html",
+    "scully": "ng build && scully --project nogaconseil --scanRoutes"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +37,9 @@
     "@angular-eslint/template-parser": "15.1.0",
     "@angular/cli": "~15.0.2",
     "@angular/compiler-cli": "^15.0.0",
+    "@scullyio/ng-lib": "^2.1.41",
+    "@scullyio/scully": "^2.1.41",
+    "@scullyio/scully-plugin-puppeteer": "^2.1.41",
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.44.0",
     "@typescript-eslint/parser": "5.44.0",

@@ -1,23 +1,20 @@
 import { Routes } from '@angular/router';
 
-import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { TypoComponent } from './typo/typo.component';
 
 export const APP_ROUTES: Routes = [
   {
     path: '',
+    pathMatch: 'full',
     component: HomeComponent,
+  },
+  {
+    path: 'typo',
+    component: TypoComponent,
   },
   {
     path: '**',
     redirectTo: '/',
   },
 ];
-
-if (!environment.production) {
-  APP_ROUTES.unshift({
-    path: 'typo',
-    component: TypoComponent,
-  });
-}
