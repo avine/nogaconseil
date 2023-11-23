@@ -1,0 +1,38 @@
+.app-reviews-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+    border-radius: 8px;
+    padding: 1.5rem;
+
+    box-shadow: 0 0 0.5rem var(--border);
+    background-color: var(--scene);
+
+    clear: right;
+
+    @media (min-width: 1024px) {
+      flex-basis: calc(50% - 1.5rem);
+    }
+  }
+
+  cite {
+    display: block;
+    text-align: right;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+    font-style: italic;
+    color: var(--secondary);
+
+    &::before,
+    &::after {
+      content: '—';
+      padding: 0 0.5rem;
+    }
+  }
+}

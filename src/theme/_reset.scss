@@ -1,0 +1,56 @@
+@use './variables' as var;
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  background-color: var(--scene);
+  color: var(--text);
+  font-family: var.$font-family;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: inherit;
+  color: inherit;
+  font: inherit;
+}
