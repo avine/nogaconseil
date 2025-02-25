@@ -4,7 +4,6 @@ import { NavComponent } from './shared/nav/nav.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [RouterOutlet, NavComponent],
   template: `
     <app-nav />

@@ -1,13 +1,13 @@
 import { AsyncPipe, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostBinding, OnDestroy, ViewEncapsulation, inject } from '@angular/core';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [AsyncPipe, NgIf, RouterLink, RouterLinkActive],
+  imports: [AsyncPipe, NgIf, RouterLink],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
   encapsulation: ViewEncapsulation.None,
