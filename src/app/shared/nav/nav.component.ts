@@ -1,21 +1,19 @@
-import { AsyncPipe, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, HostBinding, OnDestroy, ViewEncapsulation, inject } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnDestroy, ViewEncapsulation, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-nav',
-  standalone: true,
-  imports: [AsyncPipe, NgIf, RouterLink],
+  host: { class: 'app-nav' },
+  imports: [AsyncPipe, RouterLink],
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavComponent implements OnDestroy {
-  @HostBinding('class.app-nav') hasClass = true;
-
   scrollY$ = inject(ScrollService).scrollY$;
 
   isMenuOpened = false;

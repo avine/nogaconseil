@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-approach',
-  standalone: true,
   encapsulation: ViewEncapsulation.None,
   template: `
     <img src="assets/reshot/reshot-icon-career-choice.svg" class="icon" alt="" />

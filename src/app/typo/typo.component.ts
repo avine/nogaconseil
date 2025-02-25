@@ -3,7 +3,6 @@ import { TEXTS } from './typo.config';
 
 @Component({
   selector: 'app-typo',
-  standalone: true,
   templateUrl: './typo.component.html',
   encapsulation: ViewEncapsulation.None,
 })

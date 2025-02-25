@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
-  standalone: true,
   encapsulation: ViewEncapsulation.None,
   template: `
     <img src="assets/reshot/reshot-icon-mentoring.svg" class="icon" alt="" />

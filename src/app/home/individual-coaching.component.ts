@@ -3,7 +3,6 @@ import { CardComponent } from '../shared/card/card.component';
 
 @Component({
   selector: 'app-individual-coaching',
-  standalone: true,
   imports: [CardComponent],
   encapsulation: ViewEncapsulation.None,
   template: `

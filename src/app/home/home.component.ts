@@ -10,7 +10,6 @@ import { ToolsComponent } from './tools.component';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
   templateUrl: './home.component.html',
   encapsulation: ViewEncapsulation.None,
   imports: [
