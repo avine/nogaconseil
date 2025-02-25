@@ -1,9 +1,10 @@
-<button class="app-nav__burger" [class.app-nav__burger--opened]="isMenuOpened" (click)="toggleMenu()">
+<button aria-label="Menu" class="app-nav__burger" [class.app-nav__burger--opened]="isMenuOpened" (click)="toggleMenu()">
   <span class="app-nav-burger"></span>
 </button>
 
 <button
   *ngIf="{ scrollY: scrollY$ | async } as data"
+  aria-label="Contact"
   class="app-nav__contact button"
   [class.app-nav__contact--visible]="data.scrollY ? data.scrollY.inBetween : false"
   routerLink="/"
