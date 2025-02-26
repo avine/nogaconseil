@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-landing',
-
   encapsulation: ViewEncapsulation.None,
   template: `
     <h1 class="h5 thin">

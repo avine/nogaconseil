@@ -6,7 +6,7 @@ import { debounceTime, EMPTY, fromEvent, map } from 'rxjs';
   providedIn: 'root',
 })
 export class ScrollService {
-  document = inject(DOCUMENT);
+  private document = inject(DOCUMENT);
 
   scrollY$ = this.document.defaultView
     ? fromEvent(this.document.defaultView, 'scroll').pipe(

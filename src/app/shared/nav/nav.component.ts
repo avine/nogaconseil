@@ -1,5 +1,6 @@
-import { AsyncPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnDestroy, ViewEncapsulation, inject } from '@angular/core';
+import { AsyncPipe, DOCUMENT } from '@angular/common';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation, inject, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
 import { ScrollService } from '../scroll.service';
@@ -13,20 +14,32 @@ import { ScrollService } from '../scroll.service';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavComponent implements OnDestroy {
+export class NavComponent {
+  private document = inject(DOCUMENT);
+
   scrollY$ = inject(ScrollService).scrollY$;
 
-  isMenuOpened = false;
+  isMenuOpened = signal(false);
 
-  private subscription = inject(Router)
-    .events.pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
-    .subscribe(() => (this.isMenuOpened = false));
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+  constructor() {
+    inject(Router)
+      .events.pipe(
+        takeUntilDestroyed(),
+        filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+      )
+      .subscribe(() => this.isMenuOpened.set(false));
   }
 
   toggleMenu() {
-    this.isMenuOpened = !this.isMenuOpened;
+    this.isMenuOpened.update((isMenuOpened) => !isMenuOpened);
+  }
+
+  scrollTo(fragment: string) {
+    if (`#${fragment}` !== this.document.location.hash) {
+      return;
+    }
+    // Scroll manually to the target if the current browser URL hash is already equal to the target!
+    this.document.querySelector(`#${fragment}`)?.scrollIntoView({ behavior: 'smooth' });
+    this.isMenuOpened.set(false);
   }
 }

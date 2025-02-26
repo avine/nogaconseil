@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, computed, signal, ViewEncapsulation } from '@angular/core';
 import { TEXTS } from './typo.config';
 
 @Component({
@@ -7,13 +7,11 @@ import { TEXTS } from './typo.config';
   encapsulation: ViewEncapsulation.None,
 })
 export class TypoComponent {
-  get text() {
-    return TEXTS[this.textIndex];
-  }
+  textIndex = signal(0);
 
-  textIndex = 0;
+  text = computed(() => TEXTS[this.textIndex()]);
 
   nextText() {
-    this.textIndex = (this.textIndex + 1) % TEXTS.length;
+    this.textIndex.update((textIndex) => (textIndex + 1) % TEXTS.length);
   }
 }
